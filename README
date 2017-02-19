@@ -1,0 +1,10 @@
+Fake IR remote control for a no-name 3-port "Mini HDMI Switch".
+
+Hardware and software requirements are very low, an Arduino board / project is
+only used due significant amounts of laziness.
+
+Hardware setup: Connect an opto coupler (see schematic) to the Arduino's
+pin 3. Then connect the opto coupler outputs to the HDMI Switch.
+
+Software setup: Open a 9600 Baud serial terminal and send "1" to select input
+1, "2" for 2 or "3" for 3. All other characters are silently ignored.
